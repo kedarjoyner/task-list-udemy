@@ -1,0 +1,22 @@
+{
+  "name": "task-app",
+  "authors": [
+    "kedarjoyner <kedarjoyner@gmail.com>"
+  ],
+  "description": "A web app that allows users to create and delete tasks",
+  "main": "assets/js/script.js",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2"
+  }
+}
