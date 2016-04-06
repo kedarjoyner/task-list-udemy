@@ -1,7 +1,8 @@
 
 
 // Check off specific todos by clicking
-$("li").click(function(){
+// When li is clicked inside ul, run code
+$("ul").on("click", "li", function(){
   var element = $(this);
   // effect only li that was clicked, hence "this"
   element.toggleClass("completed");
@@ -9,9 +10,9 @@ $("li").click(function(){
 
 // Click on X to delete todo
 // event tells span not to bubble up
-$("span").click(function(event){
+$("ul").on("click", "span", function(event){
   var element = $(this);
-  // parent gives us the li
+  // parent() gives us the li
   // fadeOut needs callback function of remove in order
   // to remove li after it fades out
   element.parent().fadeOut(500, function(){
@@ -24,8 +25,15 @@ $("span").click(function(event){
 // Add click listener to input
 // event holds all the info about the keypress
 $("input[type=text]").keypress(function(event){
+
   // which refers to code of key that was pressed
   if(event.which === 13) {
-    console.log("enter!");
+
+    // grabs new task text from input
+    var newTask = $(this).val();
+
+    // empties input value
+    var emptyInput = $(this).val("");
+    $("ul").append("<li><span>X</span> " + newTask + "</li>");
   }
 });

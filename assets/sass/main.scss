@@ -7,15 +7,37 @@
 @import "compass/css3";
 @import "base";
 
+
 #container {
-  max-width: 300px;
-  border: 2px solid gray;
-  padding: 0 1em;
-  margin: 0 auto;
+  max-width: 500px;
+  height: auto;
+  // @include box-shadow(0 0 3px rgba(0, 0, 0, 0.1));
+  margin: 100px auto;
+  // border: 1px solid $gray;
+
+  h1 {
+    margin: 0;
+    color: white;
+    background-color: $blue;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 8px 0;
+  }
   #input-box {
-    margin: 1em 0;
+    margin: 0;
+    background-color: $gray;
     width: 100%;
+    padding: 12px 8px;
+    border: 0;
+    outline: none;
    @include box-sizing(border-box);
+  }
+  li {
+    padding: 8px 0;
+    background-color: white;
+    &:nth-child(2n) {
+      background-color: $gray;
+    }
   }
 }
 

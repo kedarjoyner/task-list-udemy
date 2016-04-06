@@ -1,4 +1,15 @@
 
+// color variables
+$gray: #f7f7f7;
+$blue: #4285f4;
+$black: #323232;
+
+// font weight:
+$light: 300;
+$normal: 400;
+$bold: 500;
+$extraBold: 700;
+
 // set base font size
 
 html {
@@ -17,19 +28,11 @@ html {
   }
 }
 
-// Modules scale with document
-
-.header {
-  font-size: 2.5rem;
-}
-.footer {
-  font-size: 0.75;
-}
-
 // headers
 
 h1 {
   font-size: 3em;
+  font-weight: $normal;
 }
 
 h2 {
@@ -40,6 +43,18 @@ h3 {
   font-size: 2em;
 }
 
-body, .header {
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   line-height: 1.4em;
+  color: $black;
+  font-weight: $light;
+}
+
+// Modules scale with document
+
+.header {
+  font-size: 1.2rem;
+}
+.footer {
+  font-size: 0.75;
 }
