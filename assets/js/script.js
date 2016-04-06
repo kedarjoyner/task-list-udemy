@@ -40,8 +40,8 @@ $("input[type=text]").keypress(function(event){
 
 
 $("#sortable").sortable({
-     opacity: 0.6,
-     cursor : "move"
+     "opacity": 0.6,
+     "cursor" : "grab"
 });
 
 $(".ion-plus-round").click(function() {

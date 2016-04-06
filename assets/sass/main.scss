@@ -58,14 +58,15 @@ li {
   height: 60px;
   line-height: 60px;
   background-color: white;
+  border-bottom: 1px solid white;
 
   &:nth-child(2n) {
     background-color: $gray;
   }
-  &:hover span {
-    width: 60px;
-    opacity: 1.0
-  }
+  // &:hover span {
+  //   width: 60px;
+  //   opacity: 1.0
+  // }
 }
 
 // span tags
@@ -76,8 +77,8 @@ span {
   color: white;
   margin-right: 20px;
   height: 60px;
-  width: 0;
+  width: 60px;
   text-align: center;
   transition: 0.2s linear;
-  opacity: 0;
+  // opacity: 0;
 }
