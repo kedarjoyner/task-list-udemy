@@ -8,6 +8,11 @@ $("ul").on("click", "li", function(){
   element.toggleClass("completed");
 });
 
+$("#sortable").sortable({
+     "opacity": 0.6,
+     "cursor" : "grab"
+});
+
 // Click on X to delete todo
 // event tells span not to bubble up
 $("ul").on("click", "span", function(event){
@@ -38,11 +43,6 @@ $("input[type=text]").keypress(function(event){
   }
 });
 
-
-$("#sortable").sortable({
-     "opacity": 0.6,
-     "cursor" : "grab"
-});
 
 $(".ion-plus-round").click(function() {
   $("input[type=text]").fadeToggle();
