@@ -19,29 +19,57 @@
     margin: 0;
     color: white;
     background-color: $blue;
-    text-align: center;
     text-transform: uppercase;
-    padding: 8px 0;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
   }
-  #input-box {
+  .ion-plus-round {
+    float: right;
+  }
+  input {
     margin: 0;
     background-color: $gray;
+    color: $blue;
     width: 100%;
-    padding: 12px 8px;
+    padding: 0 10px;
+    height: 50px;
     border: 0;
     outline: none;
    @include box-sizing(border-box);
-  }
-  li {
-    padding: 8px 0;
-    background-color: white;
-    &:nth-child(2n) {
-      background-color: $gray;
-    }
+
+   &:focus {
+     background: white;
+     border: 2px solid $blue;
+   }
   }
 }
 
 .completed {
   color: gray;
   text-decoration: line-through;
+}
+
+// list items
+
+li {
+  height: 40px;
+  line-height: 40px;
+  background-color: white;
+
+  &:nth-child(2n) {
+    background-color: $gray;
+  }
+}
+
+// span tags
+
+span {
+  display: inline-block;
+  background-color: $red;
+  color: white;
+  margin-right: 20px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
 }

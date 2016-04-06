@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="assets/css/main.css" media="screen" title="no title" charset="utf-8">
   <meta charset="UTF-8">
@@ -9,16 +10,27 @@
 <body>
 
 <div id="container">
-    <h1 class="header">Task List</h1>
+    <h1 class="header">Task List
+      <i class="ion-plus-round"></i>
+    </h1>
 
   <div class="content-wrap">
-    <input type="text" id="input-box" placeholder="Add New Task"/>
+    <input type="text" id="input-box" placeholder="Add New Task..."/>
     <ul>
-      <li><span>X</span> Go to potions class</li>
-      <li><span>X</span> Buy new robes</li>
-      <li><span>X</span> Visit Hagrid</li>
+      <li>
+        <span>
+          <i class="ion-close-round"></i>
+        </span> Go to potions class</li>
+      <li>
+        <span>
+          <i class="ion-close-round"></i>
+        </span> Buy new robes</li>
+      <li>
+        <span>
+          <i class="ion-close-round"></i>
+        </span> Visit Hagrid</li>
     </ul>
-    </div>
+  </div>
 
 </div>
 
