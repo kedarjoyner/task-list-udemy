@@ -41,3 +41,8 @@ $("input[type=text]").keypress(function(event){
 $(".ion-plus-round").click(function() {
   $("input[type=text]").fadeToggle();
 });
+
+$("ul").sortable({
+    'containment': 'parent',
+    'opacity': 0.6,
+});
