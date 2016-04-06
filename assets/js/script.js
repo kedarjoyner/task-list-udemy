@@ -15,7 +15,7 @@ $("#sortable").sortable({
 
 // Click on X to delete todo
 // event tells span not to bubble up
-$("ul").on("click", "span", function(event){
+$("#sortable").on("click", "span", function(event){
   var element = $(this);
   // parent() gives us the li
   // fadeOut needs callback function of remove in order
