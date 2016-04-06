@@ -9,7 +9,7 @@
 
 
 #container {
-  max-width: 500px;
+  max-width: 800px;
   height: auto;
   // @include box-shadow(0 0 3px rgba(0, 0, 0, 0.1));
   margin: 100px auto;
@@ -20,21 +20,21 @@
     color: white;
     background-color: $blue;
     text-transform: uppercase;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 15px;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 30px;
   }
   .ion-plus-round {
     float: right;
   }
   input {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: $normal;
     margin: 0;
     background-color: $gray;
     color: $blue;
     width: 100%;
-    padding: 0 26px;
+    padding: 35px 26px;
     height: 50px;
     border: 0;
     outline: none;
@@ -55,15 +55,15 @@
 // list items
 
 li {
-  height: 40px;
-  line-height: 40px;
+  height: 60px;
+  line-height: 60px;
   background-color: white;
 
   &:nth-child(2n) {
     background-color: $gray;
   }
   &:hover span {
-    width: 40px;
+    width: 60px;
     opacity: 1.0
   }
 }
@@ -75,7 +75,7 @@ span {
   background-color: $red;
   color: white;
   margin-right: 20px;
-  height: 40px;
+  height: 60px;
   width: 0;
   text-align: center;
   transition: 0.2s linear;
