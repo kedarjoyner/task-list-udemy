@@ -1,4 +1,22 @@
+var init = function() {
+    document.addEventListener('touchstart', handler, true);
+    document.addEventListener('touchmove', handler, true);
+    document.addEventListener('touchend', handler, true);
+    document.addEventListener('touchcancel', handler, true);
+};
 
+var handler = function(event) {
+    var touch = event.changedTouches[0],
+        simulatedEvent = document.createEvent('MouseEvent');
+
+    simulatedEvent.initMouseEvent(
+         { touchstart: 'mousedown', touchmove: 'mousemove', touchend: 'mouseup' } [event.type],
+         true, true, window, 1,
+         touch.screenX, touch.screenY, touch.clientX, touch.clientY,
+         false, false, false, false, 0, null);
+
+    touch.target.dispatchEvent(simulatedEvent);
+};
 
 // Check off specific todos by clicking
 // When li is clicked inside ul, run code
@@ -8,14 +26,14 @@ $("ul").on("click", "li", function(){
   element.toggleClass("completed");
 });
 
-$("ul").sortable({
+$("#sortable").sortable({
      "opacity": 0.6,
      "cursor" : "grab"
 });
 
 // Click on X to delete todo
 // event tells span not to bubble up
-$("ul").on("click", "span", function(event){
+$("#sortable").on("click", "span", function(event){
   var element = $(this);
   // parent() gives us the li
   // fadeOut needs callback function of remove in order
