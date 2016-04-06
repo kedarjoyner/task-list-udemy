@@ -27,25 +27,41 @@
   .ion-plus-round {
     float: right;
   }
+}
+
+form {
+
   input {
     font-size: 1.4rem;
-    font-weight: $normal;
+    padding-left: 35px;
     margin: 0;
+    height: 60px;
     background-color: $gray;
     color: $blue;
-    width: 100%;
-    padding: 35px 26px;
-    height: 50px;
+    width: 80%;
     border: 0;
     outline: none;
    @include box-sizing(border-box);
 
    &:focus {
      background: white;
-     border: 2px solid $blue;
+    //  border: 2px solid $blue;
    }
   }
+  #submit-input {
+    font-size: 1rem;
+    font-weight: $normal;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    float: right;
+    width: 20%;
+    height: 60px;
+    border: none;
+    background-color: $red;
+  }
 }
+
 
 .completed {
   color: gray;
