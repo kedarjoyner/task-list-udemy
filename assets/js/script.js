@@ -38,10 +38,12 @@ $("input[type=text]").keypress(function(event){
   }
 });
 
-$(".ion-plus-round").click(function() {
-  $("input[type=text]").fadeToggle();
-});
 
 $("#sortable").sortable({
-    'opacity': 0.6,
+     opacity: 0.6,
+     cursor : "move"
+});
+
+$(".ion-plus-round").click(function() {
+  $("input[type=text]").fadeToggle();
 });
