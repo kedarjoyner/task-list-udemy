@@ -42,10 +42,6 @@ $(".ion-plus-round").click(function() {
   $("input[type=text]").fadeToggle();
 });
 
-$("ul").sortable({
-    'containment': 'parent',
-    'opacity': 0.6,
-});
 
 (function( $ ) {
 
@@ -104,3 +100,8 @@ $("ul").sortable({
     });
 
 })( jQuery );
+
+$("ul").sortable({
+    'containment': 'parent',
+    'opacity': 0.6,
+});
