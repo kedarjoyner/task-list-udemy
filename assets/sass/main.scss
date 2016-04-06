@@ -63,10 +63,10 @@ li {
   &:nth-child(2n) {
     background-color: $gray;
   }
-  // &:hover span {
-  //   width: 60px;
-  //   opacity: 1.0
-  // }
+  &:hover span {
+    width: 60px;
+    opacity: 1.0
+  }
 }
 
 // span tags
@@ -77,8 +77,8 @@ span {
   color: white;
   margin-right: 20px;
   height: 60px;
-  width: 60px;
+  width: 0;
   text-align: center;
   transition: 0.2s linear;
-  // opacity: 0;
+  opacity: 0;
 }

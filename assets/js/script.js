@@ -8,14 +8,14 @@ $("ul").on("click", "li", function(){
   element.toggleClass("completed");
 });
 
-$("#sortable").sortable({
+$("ul").sortable({
      "opacity": 0.6,
      "cursor" : "grab"
 });
 
 // Click on X to delete todo
 // event tells span not to bubble up
-$("#sortable").on("click", "span", function(event){
+$("ul").on("click", "span", function(event){
   var element = $(this);
   // parent() gives us the li
   // fadeOut needs callback function of remove in order
