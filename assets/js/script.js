@@ -34,7 +34,7 @@ $("input[type=text]").keypress(function(event){
 
     // empties input value
     var emptyInput = $(this).val("");
-    $("ul").append("<li><span><i class='fa fa-trash'></i></span> " + newTask + "</li>");
+    $("ul").append("<li><span><i class='ion-close-round'></i></span> " + newTask + "</li>");
   }
 });
 
